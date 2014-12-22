@@ -24,6 +24,9 @@ This program allows a user to search for a user by means of a username or an ID.
 ## Only search by one field at a time.  If both the username and ID field have input in them, you will
 ## be asked to search again using only one method.
 
+#npm installs
+do an 'npm install http' if you do not already have this package
+
 
 #Search with username text box
 The username search method will pull every search result that is similar to the name. 
