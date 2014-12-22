@@ -1,0 +1,120 @@
+extends layout
+
+block content
+    h1= title
+    p The World's Outcomes Repository
+
+    // Wrapper
+    #wrapper
+
+        // USER INFO
+        #userInfo           
+            h2 Profile Pic
+            table
+                strong Name: 
+                |   <span id= 'pic_name'></span>
+                br               
+                <img id= 'pic' class= 'input-img' src= '' style= 'width:150px;height:150px'>
+            h2 Badges & Rep
+            p
+                strong Gold:
+                |  <span id='gold'></span>
+                br
+                strong Silver:
+                |  <span id='silver'></span>
+                br
+                strong Bronze:
+                |  <span id='bronze'></span>
+                br
+                strong Accept Rate:
+                |  <span id='accept_rate'></span>
+                br
+                strong Overall Reputation:
+                |  <span id='reputation'></span>
+            h2 Tags
+            p
+                <span id='tags'></span>        
+            h2 Outcomes Profile
+            p
+                strong Name:
+                |  <span id='display_name'></span>
+                br
+                strong User ID:
+                |  <span id='user_id'></span>
+                br 
+                strong Age:
+                |  <span id='age'></span>
+                br            
+                strong Is Employee:
+                |  <span id='is_employee'></span>
+                br
+                strong Creation Date:
+                |  <span id='creation_date'></span>
+                br
+                strong Last Modified Date:
+                |  <span id='last_modified'></span>
+                br
+                strong Last Access Date:
+                |  <span id='last_access'></span>
+                br
+                strong Reputation Change Year:
+                |  <span id='reputation_year'></span>
+                br
+                strong Reputation Change Quarter:
+                |  <span id='reputation_quarter'></span>
+                br
+                strong Reputation Change Month:
+                |  <span id='reputation_month'></span>
+                br
+                strong Reputation Change Week:
+                |  <span id='reputation_week'></span>
+                br
+                strong Reputation Change Day:
+                |  <span id='reputation_day'></span>
+                br                                
+                strong Account Type:
+                |  <span id='user_type'></span>
+                br                
+                strong Account ID:
+                |  <span id='account_id'></span>
+                br
+                strong Location:
+                |  <span id='location'></span>
+                br
+                strong Website URL:
+                |  <span id='website'></span>
+                br
+                strong Link URL:
+                |  <span id='link'></span>                
+            h2 Pulsing Quota
+            p
+                strong Max Pulses:
+                |  <span id='quota_max'></span>
+                br
+                strong Remaining Pulses:
+                |  <span id='quota_remaining'></span>                              
+        // /USER INFO       
+
+        // USER LIST
+        h2 Outcomes Catalogue
+        #userList
+            table
+                thead
+                    th UserName
+                    th Accept Rate
+                    th Profile Pic
+                    th Delete?
+                tbody
+        // /USER LIST
+
+        // ADD USER
+        h2 Poll StackOverflow
+        #addUser
+            fieldset
+                input#inputUserName(type='text', placeholder='Username')
+                input#inputUserID(type='text', placeholder='ID') 
+                br
+                button#btnAddUser Search The Stack
+        // /ADD USER
+
+    // /WRAPPER
